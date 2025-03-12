@@ -44,3 +44,11 @@ addButton.addEventListener("click", () => {
   const value = taskInput.value.trim();
   if (value) createList(value);
 });
+
+taskInput.addEventListener("keydown", (event) => {
+  const value = taskInput.value.trim();
+
+  if (event.key === "Enter") {
+    createList(value);
+  }
+});
