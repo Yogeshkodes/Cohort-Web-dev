@@ -48,7 +48,15 @@ function showTime() {
     Second.style.transform = `rotate(${secondDeg}deg)`;
 
     digitalClock.textContent = `${hour}:${minute}:${seconds}`;
+    date.textContent = `${formatter.format(Time)}`;
   }, 1000);
+
+  const formatter = new Intl.DateTimeFormat("en-US", {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
 }
 createClockNumbers();
 showTime();
