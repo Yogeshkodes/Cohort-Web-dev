@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #2d3748;
+
+  display: flex; /* Enable Flexbox on the body */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Ensure body takes the full viewport height */
+  text-align: center;
+}
+
+button {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: rgba(184, 176, 162, 0.712) 0px 30px 60px -12px inset,
+    rgba(179, 182, 164, 0.3) 0px 18px 36px -18px inset;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2d3748;
+}
+
+.active {
+  display: block;
+}
+
+.container {
+  background-color: #feee;
+  height: 70%;
+  width: 50%;
+  padding: 20px;
+  overflow: scroll;
+}
+
+.timeline {
+  display: flex;
+  justify-content: end;
+  gap: 3px;
+  margin-bottom: 50px;
+}
+
+ul {
+  display: flex;
+  background-color: azure;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  background: white;
+  color: black;
+}
+th,
+td {
+  font-weight: bold;
+}
+
+.section {
+  margin-bottom: 50px;
+}
+
+.showdates {
+  margin-block: 20px;
+  border: 0.5px solid grey;
+  width: 25%;
+  margin-inline: auto;
+  border-radius: 8px;
+  padding: 12px 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.showmood {
+  justify-content: flex-end;
+}
