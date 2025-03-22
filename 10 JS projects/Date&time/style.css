@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3634349d;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  border: 1px solid black;
+  padding: 20px 20px;
+  width: 400px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 1px 3px 5px 1px;
+}
+
+.time {
+  font-size: 42px;
+  margin-bottom: 5px;
+}
