@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  color: #2c3a47;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input {
+  padding: 6px 8px;
+  border-radius: 5px;
+  border: 0.5px solid #2c3a47;
+  margin-right: 10px;
+}
+
+button {
+  color: #141212;
+  padding: 6px 8px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+p {
+  margin-top: 30px;
+}
