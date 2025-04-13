@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #222831;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.board {
+  display: flex;
+
+  gap: 30px;
+}
+
+.column {
+  background-color: #393e46;
+  width: 300px;
+  min-height: 400px;
+  padding: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+  color: #fff;
+  text-align: center;
+}
+
+.tasks {
+  min-height: 400px;
+}
+
+.task-input {
+  width: 100%;
+  padding: 10px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.add-task {
+  width: 100%;
+  padding: 10px 8px;
+  border-radius: 4px;
+  margin-top: 15px;
+  border: none;
+  cursor: pointer;
+  background-color: #d89216;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.add-task:hover {
+  background-color: #ae7718;
+}
+
+.cards {
+  background-color: #e1d89f;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  color: #393e46;
+  cursor: grab;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.cards:hover {
+  transform: scale(1.05);
+}
+
+.contextMenu {
+  position: absolute;
+  display: none;
+  background-color: #fff;
+}
+
+.contextMenu ul li {
+  list-style-type: none;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.contextMenu ul li:last-child {
+  border-top: 0.5px solid #000;
+}
