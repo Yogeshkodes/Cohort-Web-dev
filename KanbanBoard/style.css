@@ -61,12 +61,14 @@ body {
 .cards {
   background-color: #e1d89f;
   padding: 10px;
-  margin-bottom: 10px;
+  padding-left: 15px;
+  margin: 10px 0px;
   border-radius: 4px;
   color: #393e46;
   cursor: grab;
   transition: all 0.3s ease;
   position: relative;
+  text-align: start;
 }
 
 .cards:hover {
@@ -87,4 +89,12 @@ body {
 
 .contextMenu ul li:last-child {
   border-top: 0.5px solid #000;
+}
+
+.time {
+  text-align: end;
+  display: block;
+  font: italic;
+  font-size: 12px;
+  margin-top: 12px;
 }
